@@ -40,7 +40,7 @@ app.post('/identify', async (req: Request, res: Response): Promise<any> => {
 
       return res.status(200).json({
         contact: {
-          primaryContactId: newContact.id,
+          primaryContatctId: newContact.id,
           emails: newContact.email ? [newContact.email] : [],
           phoneNumbers: newContact.phoneNumber ? [newContact.phoneNumber] : [],
           secondaryContactIds: []
@@ -147,7 +147,7 @@ app.post('/identify', async (req: Request, res: Response): Promise<any> => {
 
     return res.status(200).json({
       contact: {
-        primaryContactId: oldestPrimary.id,
+        primaryContatctId: oldestPrimary.id,
         emails: Array.from(finalEmails),
         phoneNumbers: Array.from(finalPhones),
         secondaryContactIds: secondaryContactIds

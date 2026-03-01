@@ -1,4 +1,5 @@
-**Live URL:** [Insert Render URL here]
+**Live URL:** `https://<your-app-name>.onrender.com/identify`  
+_(Replace this with your actual Render deployment URL before submission.)_
 
 # Bitespeed Identity Reconciliation Task
 
@@ -52,11 +53,11 @@ curl -X POST http://localhost:3000/identify \
   -d '{"email":"mcfly@hillvalley.edu", "phoneNumber":"123456"}'
 ```
 
-**Successful Response:**
+**Successful Response (as per spec):**
 ```json
 {
   "contact": {
-    "primaryContactId": 1,
+    "primaryContatctId": 1,
     "emails": [
       "mcfly@hillvalley.edu"
     ],
